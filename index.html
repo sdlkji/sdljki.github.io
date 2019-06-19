@@ -8,10 +8,11 @@
 
 <body>
   <h1>HRA</h1>
-  <form action="/" method="post">
+
+  <form id='hra'>
 
     <p>Smoking</p>
-    <select name="smoking">
+    <select name="smoking1" id="smoking">
       <option value=""></option>
       <option value="smokingCurrent">current</option>
       <option value="smokingFormer10">Former but quit less than 10 years ago</option>
@@ -19,26 +20,30 @@
     </select>
     <br><br>
 
-<p>Seatbelt Use</p>
-    <select name="seatbelt">
+    <p>Seatbelt Use</p>
+    <select name= "seatbelt1" id="seatbelt">
       <option value=""></option>
       <option value="seatbeltYes">Yes</option>
       <option value="seatbeltNo">No</option>
     </select>
     <br><br>
 
-<p>Overall Health:</p>
-    <select name="health">
+    <p>Overall Health:</p>
+    <select id="health">
       <option value=""></option>
       <option value="healthFair">Fair</option>
       <option value="healthPoor">Poor</option>
     </select>
     <br><br>
 
-<button type="submit" name="button">Calculate HRA</button>
-  </form>
+<button type="button" name="button">submit</button>  </form>
 
 
+  <h2>wait for it</h2>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>
